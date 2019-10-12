@@ -23,7 +23,7 @@ app.layout= html.Div(children=[
               
     html.H1(children='3D Plotter',style={'textAlign': 'center'}),
     
-    html.H3(children='3D Plotting Tool for f(x,y)',style={'textAlign': 'center','border-bottom':'2px double'}),
+    html.H3(children='3D Plotting Tool for f(x,y)',style={'textAlign': 'center'}),
     
     html.Div([
         html.Label('X-Values',style={'display':'table-cell','font-weight':'bold'}),
