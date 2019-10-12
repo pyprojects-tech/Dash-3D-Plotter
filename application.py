@@ -66,7 +66,7 @@ app.layout= html.Div(children=[
     html.Div([
         html.Label('Enter an equation in the form of z = f(x,y)',style={'display':'table-cell','font-weight':'bold'}),
 
-        dcc.Input(id='equation',value='',type='string',placeholder='Enter equation here',size=50),
+        dcc.Input(id='equation',value='',type='string',placeholder='Example: sin(x**2)*cos(y)',size=50),
 
         html.Div(id="equation-val"),
 
@@ -76,7 +76,7 @@ app.layout= html.Div(children=[
 
     html.Div([
         html.Label('Select Type of Graph to Plot',style={'font-weight': 'bold'}),
-        dcc.RadioItems(id='radio',
+        dcc.RadioItems(id='radio',value='surface',
             options=[
                 {'label': 'Surface Plot', 'value': 'surface'},
                 {'label': 'Heatmap', 'value': 'heatmap'},
